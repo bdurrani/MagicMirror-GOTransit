@@ -30,9 +30,9 @@ Module.register("gotransit", {
 		if (Array.isArray(tableData)) {
 			for (var i = 0; i < tableData.length; i++) {
 				var data = tableData[i];
-				if(this.config.line != null && this.config.line.toUpperCase() === data.key)
+				if(this.config.line != null && this.config.line.toUpperCase() != data.key)
 				{
-					break;
+					continue;
 				}
 				var tr = document.createElement('tr');
 				var cell = this.createTableCell(data.transitLine);
