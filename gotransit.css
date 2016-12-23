@@ -1,0 +1,21 @@
+table.test {
+    border-collapse: separate;
+    border-spacing: 10px;
+    *border-collapse: expression('separate', cellSpacing = '10px');
+}
+
+table.test td {
+    /*margin: 12px; 
+    padding: 12px;*/
+    text-align: left;
+}
+
+table.test .delay{
+     color:red;
+     font-weight: bold;
+ }
+
+table.test .ontime{
+     color:green;
+ }
+ 
