@@ -1,5 +1,5 @@
 /* Magic Mirror
- * Node Helper: GoTransit
+ * Node Helper: MMM-gotransit
  *
  * MIT Licensed.
  */
