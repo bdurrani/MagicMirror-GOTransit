@@ -6,7 +6,7 @@
  * By Michael Teeuw http://michaelteeuw.nl
  * MIT Licensed.
  */
-Module.register("gotransit", {
+Module.register("MMM-gotransit", {
 
 	// Default module config.
 	defaults: {
@@ -95,7 +95,7 @@ Module.register("gotransit", {
 	},
 	// Override socket notification handler.
 	socketNotificationReceived: function (notification, payload) {
-		console.log("gotransit.js " + "notification: " + notification + " payload: " + payload);
+		console.log("MMM-gotransit.js " + "notification: " + notification + " payload: " + payload);
 		if (notification === "PARSED_TABLE") {
 			this.config.transitTable = payload;
 			this.updateDom();
